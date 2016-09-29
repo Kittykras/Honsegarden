@@ -1,0 +1,256 @@
+body{
+    font-family: 'Alegreya SC', serif;
+}
+h4{
+    /*color: #EB1531;*/
+    padding: 20px;
+}
+.header{
+    padding: 10px;
+    position: relative;
+/*    display: flex;
+    width: 100%;*/
+}
+.impro{
+    font-size: 24px;
+    position: absolute;
+    bottom: 126px;
+    top: 126px;
+    left: 0;
+    width:100%;
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+/*    height:200px;
+    border-box:box-sizing;
+    padding:0 4%;*/
+}
+.intro-text{
+    font-size: 17px;
+    font-family: 'Alegreya';
+    margin: 35px 20px 20px 20px;
+    border-top: 1px solid black;
+    padding: 20px 0px 20px 0px;
+}
+.group-img{
+    width: 49.2%;
+    height: auto;
+    display: block;
+    margin: auto;
+    padding: 20px;
+}
+.single-img{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+}
+.contactform{
+    padding: 20px;
+}
+
+.swiper-container{
+    width: 100%;
+    height: 300px;
+    /*margin: 20px auto;*/
+}
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+}
+/*  SECTIONS  */
+.section {
+    clear: both;
+    padding: 0px;
+    margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+    display: block;
+    float:left;
+    margin: 1% 0 1% 1.6%;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+/*  GRID OF THREE  */
+.span_3_of_3 { width: 100%; }
+.span_2_of_3 { width: 66.13%; }
+.span_1_of_3 { width: 32.26%; }
+/*  GRID OF TWO  */
+.span_2_of_2 {
+	width: 100%;
+}
+.span_1_of_2 {
+	width: 49.2%;
+}
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+    .col {  margin: 1% 0 1% 0%; }
+    .span_3_of_3, .span_2_of_3, .span_1_of_3, .span_2_of_2, .span_1_of_2 { width: 100%; }
+}
+.footer-div{
+    font-size: 13px;
+    width: 49.2%;
+}
+@import 'https://fonts.googleapis.com/css?family=Alegreya+SC';
+#cssmenu {
+    font-family: 'Alegreya SC', serif;
+    font-size: 14px;
+    line-height: 15px;
+    text-transform: uppercase;
+    text-align: left;
+}
+footer{
+    padding: 13px;
+    border-top: 1px solid black;
+}
+#cssmenu > ul {
+    width: auto;
+    list-style-type: none;
+    padding: 0;
+    padding-left: 294px;
+    margin: 0;
+    background: #26242D;
+    -webkit-box-shadow: 0px -1px 7px 1px rgba(0,0,0,1);
+    -moz-box-shadow: 0px -1px 7px 1px rgba(0,0,0,1);
+    box-shadow: 0px -1px 7px 1px rgba(0,0,0,1);
+    border-bottom: 3px solid #EB1531;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
+}
+#cssmenu > ul li#responsive-tab {
+    display: none;
+    /* Hide for large screens */
+
+}
+#cssmenu > ul li {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+}
+#cssmenu > ul li.right {
+    float: right;
+}
+#cssmenu > ul li.has-sub {
+    position: relative;
+}
+#cssmenu > ul li.has-sub:hover ul {
+    display: block;
+}
+#cssmenu > ul li.has-sub ul {
+    display: none;
+    width: 250px;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    background: #e8fb01;
+    border-top: 0 none;
+}
+#cssmenu > ul li.has-sub ul li {
+    display: block;
+}
+#cssmenu > ul li.has-sub > a {
+    /*background-image: url('images/caret.png');*/
+    background-repeat: no-repeat;
+    background-position: 90% -95%;
+}
+#cssmenu > ul li.has-sub > a.active,
+#cssmenu > ul li.has-sub > a:hover {
+    background: #d80041 no-repeat;
+    background-position: 90% 195%;
+}
+#cssmenu > ul li a {
+    display: block;
+    padding: 12px 24px 11px 24px;
+    text-decoration: none;
+    color: #E8FD02;
+    text-shadow: -1px -1px 1px #EB1531,
+        0px 4px 1px rgba(0,0,0,0.5),
+        4px 4px 5px rgba(0,0,0,0.7),
+        0px 0px 7px rgba(0,0,0,0.4);
+    /*    color: #422D34;
+        text-shadow: 0px 1px 0px #fff;*/
+}
+#cssmenu > ul li a.active,
+#cssmenu > ul li a:hover {
+    background: #EB1531;
+    color: #fff;
+    text-shadow: 0px 1px 0px #000;
+}
+@media (max-width: 600px) {
+    #cssmenu > ul {
+        width: 100%;
+        padding-left: 0;
+    }
+    #cssmenu > ul li#responsive-tab {
+        display: block;
+    }
+    #cssmenu > ul li#responsive-tab a {
+        background: url('images/menu.png') no-repeat;
+        background-position: 95% -35%;
+    }
+    #cssmenu > ul li#responsive-tab a:hover {
+        background-color: #d80041;
+        background-position: 95% 135%;
+    }
+    #cssmenu > ul li {
+        display: none;
+    }
+    #cssmenu > ul li.right {
+        float: none;
+    }
+    #cssmenu > ul li.has-sub {
+        position: relative;
+    }
+    #cssmenu > ul li.has-sub ul {
+        display: block;
+        position: static;
+        width: 100%;
+        background: #ffffff;
+        border: 0 none;
+    }
+    #cssmenu > ul li.has-sub ul li {
+        display: block !important;
+    }
+    #cssmenu > ul li.has-sub ul li a span {
+        display: block;
+        padding-left: 24px;
+    }
+    #cssmenu > ul li.has-sub > a {
+        background-image: none;
+    }
+    .impro{
+        position: static;
+    }
+/*    .logo{
+        position: absolute;
+        height: 100%;
+    }*/
+    .logo img{
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    .group-img{
+        width: 100%;
+    }
+}
+/* Make sure they show even if hidden in mobile view by JS */
+@media (min-width: 600px) {
+    #cssmenu > ul > li.collapsed {
+        display: inline-block !important;
+        *display: inline;
+        zoom: 1;
+    }
+    #cssmenu > ul ul li.collapsed {
+        display: block !important;
+    }
+}
